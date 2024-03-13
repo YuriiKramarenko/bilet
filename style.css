@@ -1,6 +1,6 @@
 body {
     width: 360px; /* Szerokość ekranu telefonu */
-    height: 640px; /* Wysokość ekranu telefonu */
+    height: 900px; /* Wysokość ekranu telefonu */
     margin: 0 auto; /* Wyśrodkowanie zawartości */
     border: 1px solid #ccc; /* Obramowanie telefonu */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień */
@@ -93,8 +93,8 @@ body {
     /* Styl dla przycisków */
 .button {
     position: relative;
-    width: 20%;
-    height: 7%;
+    width: 100px;
+    height: 75px;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -105,33 +105,41 @@ body {
     }   
     .yellow {
     position: absolute;
-    top: 45%;
-    right: 65%;
+    top: 7px;
+    right: 12px;
     background-color: var(--yellow);
     color: var(--dark-blue);
     }
     .white {
     position: absolute;
-    top: 45%;
-    right: 40%;
+    top: 7px;
+    right: -120px;
     background-color: var(--white);
     color: var(--dark-blue);
     }
     .blue {
-    position: absolute;
-    top: 45%;
-    right: 15%;
+    position: absolute;    
+    top: 7px;
+    right: -250px;
     background-color: var(--blue);
     color: var(--white);
     }
     .blue-2{
-    position: absolute;
+    top: 1px;
+    right: -245px;
     background-color: var(--blue);
     color: var(--white);
     }
     /* Styl dla biletów */
 .tickets {
     padding: 10px;
-    text-align: center;
     }
-
+.text {
+    margin-left: -15px;
+}
+.tr{
+    text-align: center;
+    border: 2px dashed #000;
+    padding: 10px;
+    background-color: #7a4242;
+}
