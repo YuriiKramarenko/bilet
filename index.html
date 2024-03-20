@@ -32,39 +32,22 @@
   </div>
   <div class="tickets">
     <p class="tickets text">POSIADANE BILETY</p>
-    <a href="#" class="button blue-2">KUP BILET</a>
-    <p class="tickets tr rr">Nie posiadasz jeszcze biletów. Kliknij w przycisk aby dodać nowy!</p>
+    <a href="kupbilet.html" class="button blue-2">KUP BILET</a>
+  </div>
+  <div class="tickets">
+  <div class="tr">
+  <p class="rr">Nie posiadasz jeszcze biletów. Kliknij w przycisk aby dodać nowy!</p>
+  </div>
+  <div>
+    <p class="tickets text">POSIADANE PAKIETY</p>
+    <a href="#" class="button blue-2">DODAJ PAKIET</a>
+  </div>
+  <div class="pakiet">
+    <p>2023/2024 Roczny pakiet bezpłatnych przejazdów</p>
+    <p>ważny od 2023-10-05</p>
+    <p>ważny do 2024-10-10</p>
   </div>
   <div class="footer">
-    <!-- Tutaj możesz dodać swoją stopkę -->
   </div>
-  <div class="button">
-
-<a href="blog.php">Powrót do Storny Głównej</a>
-</div>
-<h1>Dodaj swój przepis</h1>
-<form method="POST">
-<input type="text" name="query" placeholder="Tytuł">
-<br>
-<input type="text" name="description" placeholder="Opis">
-<br>
-<select name="category">
-<option value="breakfast">Śniadanie</option>
-<option value="lunch">Obiad</option>
-<option value="dessert">Deser</option>
-</select>
-<button type="submit">Dodaj</button>
-</form>
-
-  <?php
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "bilet_1k";
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  if ($conn->connect_error) {
-    die("Połączenie nieudane: ". $conn->connect_error);
-  }
-  ?>
 </body>
 </html>
