@@ -1,0 +1,35 @@
+body {
+    width: 360px; /* Szerokość ekranu telefonu */
+    height: 900px; /* Wysokość ekranu telefonu */
+    margin: 0 auto; /* Wyśrodkowanie zawartości */
+    border: 1px solid #ccc; /* Obramowanie telefonu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień */
+    overflow: hidden; /* Ukrycie treści, która może wychodzić poza ekran */
+    padding: 20px; /* Dodatkowy padding */
+    background-color: #f2f2f2; /* Kolor tła */
+    font-family: Arial, sans-serif; /* Domyślna czcionka */
+}
+.tlo{
+    position: relative;
+    width: 1000px;
+    height: 75px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.da{
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    background-color:yellow;
+}
+.de{
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    background-color:blue;
+}
