@@ -18,17 +18,17 @@
     </div>
         <div class="input-box">
         <input type="password" 
-        placeholder="Password"required>
+        placeholder="Password" required>
         <i class='bx bxs-lock-alt'></i>
     </div>
 
     <div class="remember-forgot">
-        <label><imput type="checbox"> Remember me
+        <label><imput type="checkbox"> Remember me
         </label>
         <a href="#">Forgot password?<a>
     </div>
 
-    <button type="sumbit" class="btn">login</button>
+    <button type="submit" class="btn">Login</button>
 
     <div class="register-list">
         <p>don't have an account? <a href="#">Register</a></p>
