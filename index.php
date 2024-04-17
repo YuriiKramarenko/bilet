@@ -4,37 +4,25 @@
     <title>Document</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.1.css"> 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.3.css"> 
 </head>
-    <body>
-        <div class="wrapper">
-<from action="">
-            <h1>login</h1>
-        <div class="input-box">
-        <input type="text" placeholder="Username"
-        required>
-        <i class='bx bxs-user'></i>
-    </div>
-        <div class="input-box">
-        <input type="password" 
-        placeholder="Password" required>
-        <i class='bx bxs-lock-alt'></i>
-    </div>
-
-    <div class="remember-forgot">
-        <label><imput type="checkbox"> Remember me
-        </label>
-        <a href="#">Forgot password?<a>
-    </div>
-
-    <button type="submit" class="btn">Login</button>
-
-    <div class="register-list">
-        <p>don't have an account? <a href="#">Register</a></p>
-    </div>
-</from>
-    </div>
-         
-    </body>
+<body>
+<div class="login-container">
+<img src="msg1943933271-31139.jpg" id="">
+  <div class="input-group">
+    <input type="email" placeholder="Email">
+  </div>
+  <div class="input-group">
+    <input type="password" placeholder="Hasło">
+  </div>
+  <button class="login-btn">Zaloguj</button>
+  <div class="bottom-text">
+    <a href="#">Zaloguj się QR</a> |
+    <a href="#">Resetuj hasło</a>
+  </div>
+  <div class="bottom-text">
+    Nie masz jeszcze konta? <a href="#">Utwórz</a>
+  </div>
+</div>
+</body>
 </html>
