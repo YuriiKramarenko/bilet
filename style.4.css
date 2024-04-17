@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#logo{
+    width: 165px;
+    margin: 0 auto; /* Wyśrodkowanie elementu wzdłuż osi poziomej */
+    padding: 50px; /* Odstęp wokół elementu */
+    display: block; /* Ustawienie elementu jako blokowy */
+  }
+.input-group {
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    outline: none;
+}
+/* Dodajemy linie pod polami input */
+input[type="text"]::after,
+input[type="email"]::after,
+input[type="password"]::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    margin-top: 2px;
+}
+.login-btn {
+    width: 100%;
+    padding: 13px;
+    background: #004288;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-bottom: 8px;
+}
+.login-btn:hover {
+    background: #0056b3;
+}

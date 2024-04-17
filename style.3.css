@@ -1,37 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
-  }
-  .login-container {
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .input-group {
-    margin-bottom: 20px;
-  }
-  input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-  }
-  .login-btn {
-    width: 100%;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  .login-btn:hover {
-    background: #0056b3;
-  }
-  .bottom-text {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+}
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#logo{
+  width: 165px;
+  margin: 0 auto; /* Wyśrodkowanie elementu wzdłuż osi poziomej */
+  padding: 50px; /* Odstęp wokół elementu */
+  display: block; /* Ustawienie elementu jako blokowy */
+}
+.input-group {
+  margin-bottom: 20px;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  outline: none;
+}
+/* Dodajemy linie pod polami input */
+input[type="email"]::after,
+input[type="password"]::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid black;
+  margin-top: 2px;
+}
+.login-btn {
+  width: 100%;
+  padding: 13px;
+  background: #004288;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 8px;
+}
+.login-btn:hover {
+  background: #0056b3;
+}
+  #qr{
+    border: 2px solid #004288;
+    padding: 13px;
+    width: 150px;
+    margin-left: 0;
     text-align: center;
-    margin-top: 20px;
+    border-radius: 7px;
+  
   }
+  #reset-password{
+    display: flex;
+    justify-content: center; /* Wycentrowanie poziome */
+    padding: 20px;
+    margin-bottom: 60px;
+}
+#create-account{
+  display: flex;
+  align-items: center; /* Wycentrowanie pionowe */
+  justify-content: center; /* Wycentrowanie poziome */
+  padding: 20px;
+}
+#create{
+  width: 27%;
+  padding: 13px;
+  background: #004288;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-left: 10px;
+}
+#create:hover {
+  background: #0056b3;
+}
+ 
