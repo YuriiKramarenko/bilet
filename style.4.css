@@ -20,7 +20,6 @@ body {
     margin-bottom: 20px;
 }
 input[type="text"],
-input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -32,7 +31,6 @@ input[type="password"] {
 }
 /* Dodajemy linie pod polami input */
 input[type="text"]::after,
-input[type="email"]::after,
 input[type="password"]::after {
     content: "";
     display: block;

@@ -9,17 +9,17 @@
 <body>
     <div class="login-container">
         <img src="img/msg1943933271-31139.jpg" id="logo" alt="Logo">
-        <form action="obsługa_formularza.php" method="post">
+        <form action="account.php" method="post">
             <div class="input-group">
-                <input type="email" id="email" name="email" placeholder="Adres email" required>
-                <span class="error-message" id="email-error" style="display: none;">Wypełnij to pole</span>
+                <input type="text" id="login" name="login" placeholder="login" required>
+                <span class="error-message" id="login-error" style="display: none;">Wypełnij to pole</span>
             </div>
             <div class="input-group">
                 <input type="password" id="password" name="password" placeholder="Hasło" required>
                 <span class="error-message" id="password-error" style="display: none;">Wypełnij to pole</span>
             </div>
             <div>
-                <button type="submit" class="login-btn">Zaloguj</button>
+                <input class="login-btn" type="submit" value="Zaloguj"/>
             </div>
         </form>
         <div id="qr">

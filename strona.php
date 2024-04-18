@@ -17,7 +17,7 @@
     <a href="#" class="nearby">W POBLIŻU</a>
   </div>
   <div class="profile">
-    <img src="img/iavatar.jpg" alt="Avatar" class="avatar">
+    <img src="img/avatar.jpg" alt="Avatar" class="avatar">
     <div class="info">
       <p>YURII</p>
       <p>KRAMARENKO</p>
