@@ -1,9 +1,6 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$dbpassword = "";
 $dbname = "bilet";
-
-
-
 ?>

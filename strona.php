@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['zalogowany']))
+{
+  header('Location: index.php');
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +18,9 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <div class="top-bar">
-    <span class="time">...</span>
-    <span class="icons">...</span>
-    <span class="battery">...</span>
+<div class="login-container">
+  <div>
+    <?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?>
   </div>
   <div class="menu-bar">
     <a href="#" class="menu">MENU <span class="badge">1</span></a>
@@ -19,9 +29,13 @@
   <div class="profile">
     <img src="img/avatar.jpg" alt="Avatar" class="avatar">
     <div class="info">
-      <p>YURII</p>
-      <p>KRAMARENKO</p>
-      <p>9990000830842</p>
+</br>
+      <?php
+      
+      echo $_SESSION['user'];
+      echo "</br>".$_SESSION['code'];
+
+      ?>
     </div>
     <img src="img/qrcode.png" alt="QR code" class="qrcode">
   </div>
@@ -49,5 +63,6 @@
   </div>
   <div class="footer">
   </div>
+</div>
 </body>
 </html>

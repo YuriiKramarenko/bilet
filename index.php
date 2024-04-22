@@ -1,9 +1,22 @@
+<?php
+
+session_start();
+
+if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
+{
+  header('Location: strona.php');
+  exit();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>logowanie się</title>
     <link rel="stylesheet" href="style.3.css"> 
 </head>
 <body>
@@ -22,6 +35,10 @@
                 <input class="login-btn" type="submit" value="Zaloguj"/>
             </div>
         </form>
+        <?php
+        if(isset($_SESSION['blad'])) echo $_SESSION['blad'];
+        
+        ?>
         <div id="qr">
             <a href="#">Zaloguj się QR</a>
         </div>

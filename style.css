@@ -1,13 +1,14 @@
 body {
-    width: 360px; /* Szerokość ekranu telefonu */
-    height: 900px; /* Wysokość ekranu telefonu */
-    margin: 0 auto; /* Wyśrodkowanie zawartości */
-    border: 1px solid #ccc; /* Obramowanie telefonu */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień */
-    overflow: hidden; /* Ukrycie treści, która może wychodzić poza ekran */
-    padding: 20px; /* Dodatkowy padding */
-    background-color: #f2f2f2; /* Kolor tła */
-    font-family: Arial, sans-serif; /* Domyślna czcionka */
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Definicja kolorów */
@@ -18,24 +19,14 @@ body {
     --white: #ffffff;
     --blue: #007bff;
     }
-/* Styl dla paska na górze */
-.top-bar {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    }
+
     /* Styl dla paska menu */
-.menu-bar {
-    background-color: var(--light-blue);
-    color: var(--dark-blue);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    .menu-bar{
+        width: 100%;
+        background-color: #1325ad;
+    
     }
+
     /* Styl dla przycisku z odznaką */
 .menu {
         position: relative;
@@ -77,9 +68,12 @@ body {
     object-fit: cover;
     }
     .info {
+        background-color: #f9e11e;
     position: absolute;
     top: 40%;
     right: 30%;
+    margin-top: 10px;
+    
     }
     .qrcode {
     position: absolute;
