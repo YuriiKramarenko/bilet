@@ -23,13 +23,19 @@ if (!isset($_SESSION['zalogowany']))
     <?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?>
   </div>
   <div class="menu-bar">
-    <a href="#" class="menu">MENU <span class="badge">1</span></a>
-    <a href="#" class="nearby">W POBLIŻU</a>
+    <a id="menu" class="pd">MENU</a>
+    <a id="bell" class="pd">&</a>
+    <a id="nearby" class="pd">W POBLIŻU</a>
   </div>
   <div class="profile">
+    <div>
+    <img src="img/logotip.jpg" alt="logotip" id="logotip">
+    </div>
+    <div>
     <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
     <div class="info">
-</br>
+  </br>
       <?php
       
       echo $_SESSION['user'];
@@ -37,7 +43,9 @@ if (!isset($_SESSION['zalogowany']))
 
       ?>
     </div>
+    <div>
     <img src="img/qrcode.png" alt="QR code" class="qrcode">
+    </div>
   </div>
   <div class="button">
     <a href="#" class="button yellow">Gdańskie Centrum Kontaktu</a>
