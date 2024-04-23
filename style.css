@@ -6,17 +6,13 @@ body {
     width: 100%;
     max-width: 420px;
     margin: auto;
+    padding: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Definicja kolorów */
-:root {
-    --dark-blue: #0a1f44;
-    --light-blue: #1fc0e8;
-    --yellow: #f9e11e;
-    --white: #ffffff;
-    --blue: #007bff;
+.menu-bar :not(.login-container) {
+    padding: 0; /* Reset padding */
     }
 
     /* Styl dla paska menu */
@@ -32,17 +28,17 @@ body {
 
     #menu{
         text-align: left;
+        padding: 5px;
     }
     #bell{
         text-align: center;
+        padding: 5px;
     }
     #nearby{
         text-align: right;
+        padding: 5px;
     }
 
-    .pd{
-        padding: 7px;
-    }
 
     /* Styl dla profilu */
 .profile {
@@ -65,16 +61,27 @@ body {
     top: 7%;
     left: 3.5%;
     }
-    .avatar {
+
+    #kolo{
+    display: flex;
+    justify-content: center; /* wyśrodkowanie poziome */
+    align-items: center; /* wyśrodkowanie pionowe */
     position: absolute;
-    border: 6px solid white;
-    top: 5%;
-    right: 2.5%;
+    top: 11.5px;
+    right: 11.5px;
+    width: 107px;
+    height: 107px;
+    background-color: #ffffff;
+    border-radius: 50%;  
+    }
+
+    .avatar {
     width: 94px;
     height: 94px;
     border-radius: 50%;
     object-fit: cover;
     }
+    
     .info {
     position: absolute;
     top: 40%;
@@ -92,45 +99,36 @@ body {
     border-radius: 20%;
      }
     /* Styl dla przycisków */
-.button {
-    position: relative;
-    width: 100px;
-    height: 75px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    }   
-    .yellow {
-    position: absolute;
-    top: 7px;
-    right: 12px;
-    background-color: var(--yellow);
-    color: var(--dark-blue);
+
+
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow-x: scroll;
+        white-space: nowrap;
+        cursor: grab;
     }
-    .white {
-    position: absolute;
-    top: 7px;
-    right: -120px;
-    background-color: var(--white);
-    color: var(--dark-blue);
+    
+    .container::-webkit-scrollbar {
+        display: none;
     }
-    .blue {
-    position: absolute;    
-    top: 7px;
-    right: -250px;
-    background-color: var(--blue);
-    color: var(--white);
+    
+    .image {
+        display: inline-block;
+        margin-right: 10px;
     }
-    .blue-2{
-    top: 1px;
-    right: -245px;
-    background-color: var(--blue);
-    color: var(--white);
+    
+    .image img {
+        max-width: 100%;
+        height: auto;
     }
+    
+
+
+
+
+
     /* Styl dla biletów */
 .tickets {
     padding: 10px;

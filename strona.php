@@ -23,16 +23,16 @@ if (!isset($_SESSION['zalogowany']))
     <?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?>
   </div>
   <div class="menu-bar">
-    <a id="menu" class="pd">MENU</a>
-    <a id="bell" class="pd">&</a>
-    <a id="nearby" class="pd">W POBLIŻU</a>
+    <a id="menu">MENU</a>
+    <a id="bell">&</a>
+    <a id="nearby">W POBLIŻU</a>
   </div>
   <div class="profile">
     <div>
     <img src="img/logotip.jpg" alt="logotip" id="logotip">
     </div>
     <div>
-    <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+    <samp id="kolo"><img src="img/avatar.jpg" alt="Avatar" class="avatar"></samp>
     </div>
     <div class="info">
   </br>
@@ -47,11 +47,13 @@ if (!isset($_SESSION['zalogowany']))
     <img src="img/qrcode.png" alt="QR code" class="qrcode">
     </div>
   </div>
-  <div class="button">
-    <a href="#" class="button yellow">Gdańskie Centrum Kontaktu</a>
-    <a href="#" class="button white">PRZYZNANE DEKLARACJE</a>
-    <a href="#" class="button blue">...</a>
+  <div class="container">
+    <div class="image"><img src="img/luffy.jpg" alt="Obrazek 1"></div>
+    <div class="image"><img src="img/zoro.jpg" alt="Obrazek 2"></div>
+    <div class="image"><img src="img/brook.jpg" alt="Obrazek 3"></div>
+    <div class="image"><img src="img/franky.jpg" alt="Obrazek 4"></div>
   </div>
+  <script src="scripts.js"></script>
   <div class="tickets">
     <p class="tickets text">POSIADANE BILETY</p>
     <a href="kupbilet.html" class="button blue-2">KUP BILET</a>
