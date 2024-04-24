@@ -56,15 +56,19 @@ if (!isset($_SESSION['zalogowany']))
   <script src="scripts.js"></script>
   <div class="tickets">
     <p class="tickets text">POSIADANE BILETY</p>
-    <a href="kupbilet.html" class="button blue-2">KUP BILET</a>
   </div>
-  <div class="tickets">
-  <div class="tr">
-  <p class="rr">Nie posiadasz jeszcze biletów. Kliknij w przycisk aby dodać nowy!</p>
+  <div id="pay">
+    <button id="kup">
+      <p >KUP BILET</p>
+    </button>
   </div>
   <div>
     <p class="tickets text">POSIADANE PAKIETY</p>
-    <a href="#" class="button blue-2">DODAJ PAKIET</a>
+</div>
+<div id="pay">
+  <button id="dodaj">
+    <p>DODAJ PAKIET</p>
+    </button>
   </div>
   <div class="pakiet">
     <p>2023/2024 Roczny pakiet bezpłatnych przejazdów</p>

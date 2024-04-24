@@ -100,14 +100,15 @@ body {
      }
     /* Styl dla przycisków */
 
-
-
     .container {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
-        overflow-x: scroll;
+        overflow-x: auto;
         white-space: nowrap;
         cursor: grab;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
     }
     
     .container::-webkit-scrollbar {
@@ -115,12 +116,16 @@ body {
     }
     
     .image {
-        display: inline-block;
+        flex: 0 0 auto;
         margin-right: 10px;
     }
     
+    .image:last-child {
+        margin-right: 0;
+    }
+    
     .image img {
-        max-width: 100%;
+        width: 130px; /* Zmniejszenie szerokości obrazków */
         height: auto;
     }
     
@@ -136,6 +141,27 @@ body {
 .text {
     margin-left: -15px;
 }
+
+#pay{
+    text-align: right;
+}
+
+#kup{
+    width: 100px;
+    height: 45px;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#dodaj{
+    width: 120px;
+    height: 45px;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
 .tr{
     border-radius: 10px;
     text-align: center;
