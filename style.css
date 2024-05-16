@@ -5,25 +5,25 @@ body {
 .login-container {
     width: 100%;
     max-width: 420px;
-    margin: auto;
     padding: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+	margin-right: auto;
 }
-
-.menu-bar :not(.login-container) {
-    padding: 0; /* Reset padding */
-    }
 
     /* Styl dla paska menu */
 .menu-bar{
     width: 100%;
+    max-width: 460px;
     height: 35px;
     display: flex;
     justify-content: space-between; /* równomierny odstęp między elementami */
     align-items: center; /* wyśrodkowanie pionowe */
     color: #ffffff;
     background-color:rgb(45, 45, 155);
+    margin-left: auto;
+	margin-right: auto;
     }
 
     #menu{
@@ -181,3 +181,34 @@ body {
     margin: auto;
     color: var(--white);
 }
+
+.footer{
+    width: 100%;
+    max-width: 460px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between; /* równomierny odstęp między elementami */
+    align-items: center; /* wyśrodkowanie pionowe */
+    color: #ffffff;
+    background-color:rgb(100, 100, 110);
+    margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+    }
+
+    #q{
+        
+        padding: 5px;
+    }
+    #w{
+        
+        padding: 5px;
+    }
+    #e{
+       
+        padding: 5px;
+    }
+    #r{
+       
+        padding: 5px;
+    }

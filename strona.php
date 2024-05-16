@@ -18,14 +18,14 @@ if (!isset($_SESSION['zalogowany']))
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-<div class="login-container">
-  <div>
-    <?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?>
-  </div>
-  <div class="menu-bar">
+<div class="menu-bar">
     <a id="menu">MENU</a>
     <a id="bell">&</a>
     <a id="nearby">W POBLIŻU</a>
+  </div>
+<div class="login-container">
+  <div>
+    <?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?>
   </div>
   <div class="profile">
     <div>
@@ -59,7 +59,7 @@ if (!isset($_SESSION['zalogowany']))
   </div>
   <div id="pay">
     <button id="kup">
-      <p >KUP BILET</p>
+      <a href="kupbilet.php">KUP BILET</a>
     </button>
   </div>
   <div>
@@ -75,8 +75,12 @@ if (!isset($_SESSION['zalogowany']))
     <p>ważny od 2023-10-05</p>
     <p>ważny do 2024-10-10</p>
   </div>
-  <div class="footer">
-  </div>
 </div>
+<div class="footer">
+    <a id="q">1</a>
+    <a id="w">2</a>
+    <a id="e">3</a>
+    <a id="r">4</a>
+  </div>
 </body>
 </html>
