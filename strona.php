@@ -13,6 +13,7 @@ if (!isset($_SESSION['zalogowany'])) {
     <title>Document</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,7 +30,7 @@ if (!isset($_SESSION['zalogowany'])) {
         </div>
 
         <!-- Main Content -->
-        <button id="menu-button">Menu</button>
+        <p id="menu-button"><i class="fas fa-bars"></i>MENU</p> 
         <a id="bell" href="pruby.html">&</a>
         <a id="nearby" href="#">W POBLIŻU</a>
     </div>

@@ -2,9 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-button');
     const menu = document.getElementById('side-menu');
 
-    // Ustawienie pozycji menu (przykład: top: 100px, left: 50px)
-    menu.style.top = '100px';
-    menu.style.left = '50px';
+  
 
     menuButton.addEventListener('click', () => {
         menu.classList.toggle('menu-open');
