@@ -30,9 +30,9 @@ if (!isset($_SESSION['zalogowany'])) {
         </div>
 
         <!-- Main Content -->
-        <p id="menu-button"><i class="fas fa-bars"></i>MENU</p> 
-        <a id="bell" href="pruby.html">&</a>
-        <a id="nearby" href="#">W POBLIŻU</a>
+        <p id="menu-button" class="bar"><i class="fas fa-bars"></i>MENU</p> 
+        <p class="bar"><i class="fa-regular fa-bell"></i></p>
+        <p class="bar">W POBLIŻU<i class="fa-solid fa-location-dot"></i></p>
     </div>
 
     <div class="login-container">

@@ -9,15 +9,14 @@ body {
 .menu-bar {
     width: 100%;
     max-width: 440px;
-    height: 50px;
+    height: 20px;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size:12px;
+    font-size:10px;
     background-color: rgb(45, 45, 155);
     padding: 10px;
     position: fixed;
@@ -25,20 +24,16 @@ body {
     z-index: 1000;
 }
 
-#bell, #nearby {
-    padding: 7px;
-    color: white;
-}
 
-#menu-button {
+.bar{
     color: white;
     cursor: pointer;
 }
 
 i {
-    font-size: 18px; /* Zmienia rozmiar ikony */
-    margin-right: 6px; /* Dodaje odstęp po prawej stronie ikony */
-    vertical-align: middle; /* Wyrównuje ikonę z tekstem */
+    font-size: 21px; /* Zmienia rozmiar ikony */
+    margin: 5px; /* Dodaje odstęp po prawej stronie ikony */
+   vertical-align:middle;
 }
 
 .menu {
@@ -46,10 +41,10 @@ i {
     transition: transform 0.3s ease;
     position: absolute; /* Ustawienie na absolute lub fixed, zależnie od potrzeb */
     top: 0; /* Przykładowe ustawienie pozycji */
-    height: 500px;
     width: 250px;
-    background-color: #333;
-    color: white;
+    height: 900px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -79,7 +74,7 @@ i {
 .login-container {
     width: 100%;
     max-width: 420px;
-    margin: 80px auto 0 auto; /* Adjusted margin to account for fixed menu bar */
+    margin: 30px auto 0 auto; /* Adjusted margin to account for fixed menu bar */
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
