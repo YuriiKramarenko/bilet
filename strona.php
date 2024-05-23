@@ -18,8 +18,15 @@ if (!isset($_SESSION['zalogowany'])) {
 </head>
 <body>
     <div class="menu-bar">
-        <!-- Panel Menu -->
-        <div id="side-menu" class="menu">
+        <!-- Main Content -->
+        <p id="menu-button" class="bar"><i class="fas fa-bars"></i>MENU</p> 
+        <p id="bottom-menu-button" class="bar"><i class="fas fa-arrow-up"></i>BOTTOM MENU</p>
+        <p class="bar"><i class="fa-regular fa-bell"></i></p>
+        <p class="bar">W POBLIŻU<i class="fa-solid fa-location-dot"></i></p>
+    </div>
+
+            <!-- Panel Menu -->
+            <div id="side-menu" class="menu">
             <button id="close-menu-button" class="close-button">X</button>
             <h2>Menu</h2>
             <ul>
@@ -30,11 +37,18 @@ if (!isset($_SESSION['zalogowany'])) {
             </ul>
         </div>
 
-        <!-- Main Content -->
-        <p id="menu-button" class="bar"><i class="fas fa-bars"></i>MENU</p> 
-        <p class="bar"><i class="fa-regular fa-bell"></i></p>
-        <p class="bar">W POBLIŻU<i class="fa-solid fa-location-dot"></i></p>
+    <div id="bottom-menu" class="bottom-menu">
+        <button id="close-bottom-menu-button" class="close-button">X</button>
+        <h2>Bottom Menu</h2>
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+        </ul>
     </div>
+
+    <div id="overlay" class="overlay"></div>
 
     <div class="login-container">
         <div class="profile">

@@ -1,16 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-button');
     const closeButton = document.getElementById('close-menu-button');
+    const bottomMenuButton = document.getElementById('bottom-menu-button');
+    const closeBottomMenuButton = document.getElementById('close-bottom-menu-button');
     const menu = document.getElementById('side-menu');
+    const bottomMenu = document.getElementById('bottom-menu');
+    const overlay = document.getElementById('overlay');
+
+    function showOverlay() {
+        overlay.classList.add('show');
+    }
+
+    function hideOverlay() {
+        overlay.classList.remove('show');
+    }
 
     menuButton.addEventListener('click', () => {
         menu.classList.toggle('menu-open');
+        if (menu.classList.contains('menu-open')) {
+            showOverlay();
+        } else {
+            hideOverlay();
+        }
         console.log('Menu button clicked');
     });
 
     closeButton.addEventListener('click', () => {
         menu.classList.remove('menu-open');
+        hideOverlay();
         console.log('Close button clicked');
+    });
+
+    bottomMenuButton.addEventListener('click', () => {
+        bottomMenu.classList.toggle('bottom-menu-open');
+        if (bottomMenu.classList.contains('bottom-menu-open')) {
+            showOverlay();
+        } else {
+            hideOverlay();
+        }
+        console.log('Bottom menu button clicked');
+    });
+
+    closeBottomMenuButton.addEventListener('click', () => {
+        bottomMenu.classList.remove('bottom-menu-open');
+        hideOverlay();
+        console.log('Close bottom menu button clicked');
     });
 
     // Kod obsługi przeciągania kontenera z obrazami
