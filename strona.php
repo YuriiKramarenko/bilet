@@ -20,12 +20,13 @@ if (!isset($_SESSION['zalogowany'])) {
     <div class="menu-bar">
         <!-- Panel Menu -->
         <div id="side-menu" class="menu">
+            <button id="close-menu-button" class="close-button">X</button>
             <h2>Menu</h2>
             <ul>
                 <li>Home</li>
                 <li>About</li>
                 <li>Services</li>
-                <li>Contact</li>
+                <li><?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?></li>
             </ul>
         </div>
 
@@ -36,9 +37,6 @@ if (!isset($_SESSION['zalogowany'])) {
     </div>
 
     <div class="login-container">
-        <div>
-            <?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?>
-        </div>
         <div class="profile">
             <img src="img/logotip.jpg" alt="logotip" id="logotip">
             <samp id="kolo"><img src="img/avatar.jpg" alt="Avatar" class="avatar"></samp>

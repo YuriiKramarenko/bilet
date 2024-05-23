@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-button');
+    const closeButton = document.getElementById('close-menu-button');
     const menu = document.getElementById('side-menu');
-
-  
 
     menuButton.addEventListener('click', () => {
         menu.classList.toggle('menu-open');
         console.log('Menu button clicked');
+    });
+
+    closeButton.addEventListener('click', () => {
+        menu.classList.remove('menu-open');
+        console.log('Close button clicked');
     });
 
     // Kod obsługi przeciągania kontenera z obrazami
