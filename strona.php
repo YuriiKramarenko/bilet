@@ -20,8 +20,8 @@ if (!isset($_SESSION['zalogowany'])) {
     <div class="menu-bar">
         <!-- Main Content -->
         <p id="menu-button" class="bar"><i class="fas fa-bars"></i>MENU</p> 
-        <p id="bottom-menu-button" class="bar"><i class="fas fa-arrow-up"></i>BOTTOM MENU</p>
-        <p class="bar"><i class="fa-regular fa-bell"></i></p>
+        <p id="bottom-menu-button" class="bar"><i class="fa-regular fa-bell"></i></p>
+        
         <p class="bar">W POBLIŻU<i class="fa-solid fa-location-dot"></i></p>
     </div>
 
