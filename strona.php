@@ -21,12 +21,11 @@ if (!isset($_SESSION['zalogowany'])) {
         <!-- Main Content -->
         <p id="menu-button" class="bar"><i class="fas fa-bars"></i>MENU</p> 
         <p id="bottom-menu-button" class="bar"><i class="fa-regular fa-bell"></i></p>
-        
         <p class="bar">W POBLIŻU<i class="fa-solid fa-location-dot"></i></p>
     </div>
 
             <!-- Panel Menu -->
-            <div id="side-menu" class="menu">
+        <div id="side-menu" class="menu">
             <button id="close-menu-button" class="close-button">X</button>
             <h2>Menu</h2>
             <ul>
