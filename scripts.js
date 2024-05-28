@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.classList.remove('show');
     }
 
+    function closeMenus() {
+        menu.classList.remove('menu-open');
+        bottomMenu.classList.remove('bottom-menu-open');
+        hideOverlay();
+    }
+
     menuButton.addEventListener('click', () => {
         menu.classList.toggle('menu-open');
         if (menu.classList.contains('menu-open')) {
@@ -26,8 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     closeButton.addEventListener('click', () => {
-        menu.classList.remove('menu-open');
-        hideOverlay();
+        closeMenus();
         console.log('Close button clicked');
     });
 
@@ -42,16 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     closeBottomMenuButton.addEventListener('click', () => {
-        bottomMenu.classList.remove('bottom-menu-open');
-        hideOverlay();
+        closeMenus();
         console.log('Close bottom menu button clicked');
     });
 
-    // Kod obsługi przeciągania kontenera z obrazami
+    overlay.addEventListener('click', () => {
+        closeMenus();
+        console.log('Overlay clicked');
+    });
+
+    // Kod obsługi przeciągania kontenera z obrazami z efektem gumy
     let isDown = false;
     let startX;
     let scrollLeft;
-
     const container = document.querySelector('.container');
 
     container.addEventListener('mousedown', (e) => {
@@ -63,12 +71,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     container.addEventListener('mouseleave', () => {
+        if (isDown) {
+            container.style.transition = 'all 0.3s ease';
+            container.scrollLeft = scrollLeft;
+            container.style.transition = '';
+        }
         isDown = false;
         container.style.cursor = 'grab';
         console.log('Mouse leave');
     });
 
     container.addEventListener('mouseup', () => {
+        if (isDown) {
+            container.style.transition = 'all 0.3s ease';
+            container.scrollLeft = scrollLeft;
+            container.style.transition = '';
+        }
         isDown = false;
         container.style.cursor = 'grab';
         console.log('Mouse up');
@@ -78,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - container.offsetLeft;
-        const walk = (x - startX) * 2;
+        const walk = (x - startX) * 1.5; // Multiply by 1.5 for more overscroll effect
         container.scrollLeft = scrollLeft - walk;
         console.log('Mouse move');
     });

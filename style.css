@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: yellowgreen;
+    background-color: rgb(36, 18, 46);
+    margin: 0;
+    padding: 0;
 }
 
 .menu-bar {
@@ -10,7 +12,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -27,21 +29,21 @@ body {
 }
 
 i {
-    font-size: 21px; /* Zmienia rozmiar ikony */
-    margin: 5px; /* Dodaje odstęp po prawej stronie ikony */
+    font-size: 21px;
+    margin: 5px;
     vertical-align: middle;
 }
 
 .menu {
     transform: translateX(-101%);
     transition: transform 0.3s ease;
-    left: 0;
-    top: 0;
-    width: 250px;
-    height: 100%;
     position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
     padding: 20px;
-    background-color: #ffffff;
+    background-color:rgba(155, 37, 37, 0.426);
     color: rgb(0, 0, 0);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1001;
@@ -50,19 +52,22 @@ i {
 .bottom-menu {
     transform: translateY(100%);
     transition: transform 0.3s ease;
+    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto 0 auto;
+    left: 50%;
+    transform: translate(-50%, 100%);
     height: 300px;
     width: 100%;
     max-width: 400px;
-    position: fixed;
     padding: 20px;
     background-color: #333;
     color: white;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu h2, .bottom-menu h2 {
@@ -85,10 +90,11 @@ i {
 
 .menu-open {
     transform: translateX(0);
+    left: calc(50% - 224px);
 }
 
 .bottom-menu-open {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
 }
 
 .close-button {
@@ -115,7 +121,7 @@ i {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 999; /* Z-index just below the menus */
+    z-index: 999;
 }
 
 .overlay.show {
@@ -125,13 +131,11 @@ i {
 .login-container {
     width: 100%;
     max-width: 440px;
-    left: 0;
-    right: 0;
-    margin: 0 auto 0 auto;
+    margin: 30px auto 0 auto;
     padding: 0.6%;
-    background: rgb(255, 255, 255);
+    background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    position: relative; /* Ensure positioning context for absolute menu positioning */
 }
 
 /* Styl dla profilu */
@@ -140,8 +144,7 @@ i {
     background-color: rgb(45, 45, 155);
     border-radius: 17px 50px 17px 17px;
     padding: 5px;
-    width: 100%;
-    max-width: 370px;
+    width: 370px;
     height: 220px;
     margin: 20px auto;
     color: white;
@@ -157,8 +160,8 @@ i {
 
 #kolo {
     display: flex;
-    justify-content: center; /* wyśrodkowanie poziome */
-    align-items: center; /* wyśrodkowanie pionowe */
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 11.5px;
     right: 11.5px;
@@ -217,7 +220,7 @@ i {
 }
 
 .image img {
-    width: 130px; /* Zmniejszenie szerokości obrazków */
+    width: 130px;
     height: auto;
 }
 
