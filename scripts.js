@@ -100,4 +100,28 @@ document.addEventListener('DOMContentLoaded', () => {
         container.scrollLeft = scrollLeft - walk;
         console.log('Mouse move');
     });
+
+    // Kod obsługi przycisku "więcej/mniej" i sprawdzania liczby słów
+    const toggleButton = document.getElementById("toggleButton");
+    const textContainer = document.getElementById("tt");
+    const textElement = document.getElementById("textElement");
+    const words = textElement.textContent.split(/\s+/);
+
+    if (words.length > 15) {
+        const initialText = words.slice(0, 15).join(" ");
+        const remainingText = words.slice(15).join(" ");
+        textElement.innerHTML = `${initialText}<span class="more-content">${remainingText}</span>`;
+        toggleButton.style.display = "inline";
+    }
+
+    toggleButton.addEventListener("click", () => {
+        const moreContent = textElement.querySelector(".more-content");
+        moreContent.classList.toggle("show");
+        if (moreContent.classList.contains("show")) {
+            toggleButton.textContent = "Mniej";
+        } else {
+            toggleButton.textContent = "Więcej";
+        }
+        console.log('Toggle button clicked');
+    });
 });

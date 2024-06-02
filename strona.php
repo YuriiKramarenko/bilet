@@ -24,27 +24,34 @@ if (!isset($_SESSION['zalogowany'])) {
         <p class="bar">W POBLIŻU<i class="fa-solid fa-location-dot"></i></p>
     </div>
 
-            <!-- Panel Menu -->
-        <div id="side-menu" class="menu">
-            <button id="close-menu-button" class="close-button">X</button>
-            <h2>Menu</h2>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li><?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?></li>
-            </ul>
-        </div>
+    <!-- Panel Menu -->
+    <div id="side-menu" class="menu">
+        <button id="close-menu-button" class="close-button">X</button>
+        <h2>Menu</h2>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li><?php echo '[<a href="logout.php">Wyloguj się</a>]'; ?></li>
+        </ul>
+    </div>
 
     <div id="bottom-menu" class="bottom-menu">
         <div id="up-bottom-menu">
             <div>
-        <p id="close-bottom-menu-button" class="close-button"><i id="up" class="fa-solid fa-arrow-down"></i></p>
+                <p id="close-bottom-menu-button" class="close-button"><i id="up" class="fa-solid fa-arrow-down"></i></p>
+            </div>
+            <div id="powiadomienia">
+                <h1>Powiadomienia<samp><i id="bell" class="fa-regular fa-bell"></i></samp></h1> 
+            </div>
+            <br><br><br><br><br><br><br>
+            <div id="tt">
+                <p id="textElement">
+                    To jest przykładowy tekst. Jest on dłuższy niż piętnaście słów, aby sprawdzić, czy przycisk "więcej" pojawi się automatycznie. Dodanie kolejnych zdań powinno zapewnić wystarczającą długość.
+                </p>
+                <button id="toggleButton" style="display: none;">Więcej</button>
+            </div>
         </div>
-        <div id="powiadomienia">
-        <h1>Powiadomienia<samp><i id="bell" class="fa-regular fa-bell"></i></samp></h1> 
-        </div>
-    </div>
     </div>
 
     <div id="overlay" class="overlay"></div>

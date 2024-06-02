@@ -96,6 +96,14 @@ i {
     vertical-align: middle; 
 }
 
+.more-content {
+    display: none;
+}
+
+#tt{
+    color: #000;
+}
+
 .menu-open {
     transform: translateX(0);
 }
@@ -106,7 +114,6 @@ i {
 
 .close-button {
     color: white;
-   
     cursor: pointer;
     position: absolute;
     top: 10px;
@@ -253,4 +260,12 @@ i {
     height: 115px;
     margin: 20px auto;
     color: white;
+}
+
+.more-content {
+    display: none;
+}
+
+.more-content.show {
+    display: inline;
 }
