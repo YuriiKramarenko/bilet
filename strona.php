@@ -37,14 +37,14 @@ if (!isset($_SESSION['zalogowany'])) {
         </div>
 
     <div id="bottom-menu" class="bottom-menu">
-        <button id="close-bottom-menu-button" class="close-button">X</button>
-        <h2>Bottom Menu</h2>
-        <ul>
-            <li>Option 1</li>
-            <li>Option 2</li>
-            <li>Option 3</li>
-            <li>Option 4</li>
-        </ul>
+        <div id="up-bottom-menu">
+            <div>
+        <p id="close-bottom-menu-button" class="close-button"><i id="up" class="fa-solid fa-arrow-down"></i></p>
+        </div>
+        <div id="powiadomienia">
+        <h1>Powiadomienia<samp><i id="bell" class="fa-regular fa-bell"></i></samp></h1> 
+        </div>
+    </div>
     </div>
 
     <div id="overlay" class="overlay"></div>
