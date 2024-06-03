@@ -3,6 +3,7 @@ body {
     background-color: rgb(36, 18, 46);
     margin: 0;
     padding: 0;
+    color: #ffffff;
 }
 
 .menu-bar {
@@ -42,10 +43,9 @@ i {
     width: 100%;
     max-width: 220px;
     height: 100%;
-    max-height: 1015px;
     padding: 20px;
-    background-color:rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    color: #000000;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1001;
 }
@@ -62,12 +62,12 @@ i {
     max-width: 400px;
     border-radius: 11px 11px 0 0;
     background-color: #ffffff;
-    color: rgb(255, 255, 255);
+    color: #000000;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
-#up-bottom-menu{
+#up-bottom-menu {
     background-color: rgb(2, 2, 255);
     position: absolute;
     top: 0;
@@ -76,32 +76,51 @@ i {
     max-width: 376px;
     height: 100px;
     padding: 12px;
+    color: white;
 }
 
-#up{
+#up {
     position: absolute;
-    top: -12px;
-    right: 50%;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
-#powiadomienia{
+#powiadomienia {
     position: absolute;
     top: 30px;
-    font-size: 8px;
+    font-size: 14px;
+    left: 20px;
 }
 
-#bell{
+#bell {
     font-size: 50px;
     margin-left: 200px;
     vertical-align: middle; 
 }
 
-.more-content {
-    display: none;
+.visible-text {
+    color: #000;
 }
 
-#tt{
-    color: #000;
+.announcement {
+    margin-bottom: 20px;
+}
+
+.toggleButton {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.toggleButton:hover {
+    background-color: #005f5f;
+}
+
+.more-content {
+    display: none;
 }
 
 .menu-open {
@@ -117,7 +136,7 @@ i {
     cursor: pointer;
     position: absolute;
     top: 10px;
-    right: 200px;
+    right: 20px;
 }
 
 .overlay {
@@ -140,14 +159,13 @@ i {
     max-width: 440px;
     height: 100%;
     max-height: 850px;
-    margin: 30px auto 0 auto;
+    margin: 30px auto;
     padding: 0.6%;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Ensure positioning context for absolute menu positioning */
+    position: relative;
 }
 
-/* Styl dla profilu */
 .profile {
     position: relative;
     background-color: rgb(45, 45, 155);
@@ -191,6 +209,7 @@ i {
     position: absolute;
     top: 40%;
     right: 30%;
+    color: white;
 }
 
 .qrcode {
@@ -203,7 +222,6 @@ i {
     border-radius: 20%;
 }
 
-/* Styl dla przycisków */
 .container {
     width: 100%;
     margin: 0 auto;
@@ -235,6 +253,7 @@ i {
 
 #pay {
     text-align: right;
+    margin: 20px;
 }
 
 #kup, #dodaj {

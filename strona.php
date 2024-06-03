@@ -45,10 +45,7 @@ if (!isset($_SESSION['zalogowany'])) {
                 <h1>Powiadomienia<samp><i id="bell" class="fa-regular fa-bell"></i></samp></h1> 
             </div>
             <br><br><br><br><br><br><br>
-            <div id="tt">
                 <?php include "announcements.php"; ?>
-                <button id="toggleButton" style="display: none;">Więcej</button>
-            </div>
         </div>
     </div>
 
