@@ -26,7 +26,7 @@ if (!isset($_SESSION['zalogowany'])) {
 
     <!-- Panel Menu -->
     <div id="side-menu" class="menu">
-        <button id="close-menu-button" class="close-button">X</button>
+        <p id="close-menu-button" class="close-menu">X</p>
         <h2>Menu</h2>
         <ul>
             <li>Home</li>
@@ -39,12 +39,12 @@ if (!isset($_SESSION['zalogowany'])) {
     <div id="bottom-menu" class="bottom-menu">
         <div id="up-bottom-menu">
             <div>
-                <p id="close-bottom-menu-button" class="close-button"><i id="up" class="fa-solid fa-arrow-down"></i></p>
+                <p id="close-bottom-menu-button" class="close-button"><i class="fa-solid fa-arrow-down"></i></p>
             </div>
             <div id="powiadomienia">
                 <h1>Powiadomienia<samp><i id="bell" class="fa-regular fa-bell"></i></samp></h1> 
             </div>
-            <br><br><br><br><br><br><br>
+            <div id="odstęp-od-powiadomienia"></div>
                 <?php include "announcements.php"; ?>
         </div>
     </div>
@@ -75,7 +75,7 @@ if (!isset($_SESSION['zalogowany'])) {
         <div id="pay">
             <button id="kup">KUP BILET</button>
         </div>
-        <div>
+        <div class="tickets">
             <p>POSIADANE PAKIETY</p>
         </div>
         <div id="pay">
