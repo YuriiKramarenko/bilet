@@ -46,9 +46,7 @@ if (!isset($_SESSION['zalogowany'])) {
             </div>
             <br><br><br><br><br><br><br>
             <div id="tt">
-                <p id="textElement">
-                    To jest przykładowy tekst. Jest on dłuższy niż piętnaście słów, aby sprawdzić, czy przycisk "więcej" pojawi się automatycznie. Dodanie kolejnych zdań powinno zapewnić wystarczającą długość.
-                </p>
+                <?php include "announcements.php"; ?>
                 <button id="toggleButton" style="display: none;">Więcej</button>
             </div>
         </div>
