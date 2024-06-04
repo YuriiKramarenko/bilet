@@ -28,7 +28,7 @@ while ($row = $result->fetch_assoc()) {
         $visible_text = implode(" ", array_slice($words, 0, 15));
         $hidden_text = implode(" ", array_slice($words, 15));
         echo '<div class="announcement">';
-        echo '<p class="visible-text">' . $visible_text . '...<span class="more-content" style="display: none;">' . $hidden_text . '</span></p>';
+        echo '<p class="visible-text">' . $visible_text . ' <span class="more-content" style="display: none;">' . $hidden_text . '</span></p>';
         echo '<button class="toggleButton">Więcej</button>';
         echo '</div>';
     } else {

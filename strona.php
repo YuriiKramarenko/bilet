@@ -19,9 +19,9 @@ if (!isset($_SESSION['zalogowany'])) {
 <body>
     <div class="menu-bar">
         <!-- Main Content -->
-        <p id="menu-button" class="bar"><i class="fas fa-bars"></i>MENU</p> 
-        <p id="bottom-menu-button" class="bar"><i class="fa-regular fa-bell"></i></p>
-        <p class="bar">W POBLIŻU<i class="fa-solid fa-location-dot"></i></p>
+        <p id="menu-button" class="bar"><i class="fas fa-bars iconn"></i>MENU</p> 
+        <p id="bottom-menu-button" class="bar"><i class="fa-regular fa-bell iconn"></i></p>
+        <p class="bar">W POBLIŻU<i class="fa-solid fa-location-dot iconn"></i></p>
     </div>
 
     <!-- Panel Menu -->
@@ -39,7 +39,7 @@ if (!isset($_SESSION['zalogowany'])) {
     <div id="bottom-menu" class="bottom-menu">
         <div id="up-bottom-menu">
             <div>
-                <p id="close-bottom-menu-button" class="close-button"><i class="fa-solid fa-arrow-down"></i></p>
+                <p id="close-bottom-menu-button"><i id="close-button" class="fa-solid fa-arrow-down"></i></p>
             </div>
             <div id="powiadomienia">
                 <h1>Powiadomienia<samp><i id="bell" class="fa-regular fa-bell"></i></samp></h1> 
